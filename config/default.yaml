@@ -5,8 +5,24 @@ num_nodes: 1
 devices: 1
 seed: 42
 
+training: true
+final_eval: false
+final_test: false
+
 model:
   num_classes: 2
+
+adversarial:
+  enabled: false
+  defense:
+    enabled: false  # Set to true for adversarial training
+    attack_type: fgsm
+    attack_params:
+      eps: 0.3
+  evaluation:
+    fgsm:
+      enabled: true
+      eps: 0.3
 
 data_module:
   data_root: "data/"
@@ -50,6 +66,7 @@ trainer:
   accelerator: gpu
   num_nodes: ${num_nodes}
   devices: ${devices}
+  precision: '16-mixed'
   max_epochs: 100
 
 defaults:

@@ -13,6 +13,9 @@ from omegaconf import DictConfig, OmegaConf
 import hydra
 from hydra.utils import get_original_cwd
 
+from attacks.attacks import FGSM
+from defenses.defenses import AdversarialTraining
+
 def train(cfg: DictConfig):
     l.seed_everything(cfg.seed, workers=True)
 
@@ -22,6 +25,11 @@ def train(cfg: DictConfig):
     print("===> Start building model")
     model = hydra.utils.instantiate(cfg.model)
     print('\n\nMODEL INITIATED', model)
+    
+    # Setup adversarial components if specified in config
+    if hasattr(cfg, 'adversarial') and cfg.adversarial.enabled:
+        print("===> Setting up adversarial components")
+        model.setup_adversarial(cfg.adversarial)
     
     # DataLoader - fix data_root path to use original working directory
     print("===> Loading datasets")

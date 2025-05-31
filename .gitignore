@@ -195,3 +195,9 @@ cython_debug/
 
 # Data folder
 data/
+
+# Checkpoint folder
+checkpoints/
+
+# Output folder
+outputs/

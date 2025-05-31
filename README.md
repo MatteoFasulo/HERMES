@@ -25,13 +25,21 @@ uv sync
 
 The project uses Lightning on top of PyTorch, as to reduce boilerplate code and make it easier to write complex models. The project is structured to allow for easy experimentation with different settings, training strategies, and data preprocessing techniques.
 
-To run the project, you can use the following command:
+To train the model, you can use the following command:
 
 ```bash
-python run.py
+python run.py training=true
 ```
 
 it will automatically load the configuration file `default.yaml` in the config directory and start training the model. If you do not have already the dataset downloaded, it will download it automatically inside the `data` directory. The training process will be logged in the `outputs` directory, where you can find the trained model, logs, and other artifacts.
+
+If instead you want to run the evaluation, you can use:
+
+```bash
+python run.py training=false
+```
+
+this will load the same configuration file and run the evaluation on the trained model overriding the training flag.
 
 > [!TIP]
 > If you want to have interactive view of the training process, you can start tensorboard dashboard with the command `tensorboard --logdir outputs/` and then open your browser at `http://localhost:6006/`. This will allow you to visualize the training process, including loss curves, model parameters, and other metrics.
