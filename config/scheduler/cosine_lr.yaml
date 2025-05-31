@@ -1,0 +1,4 @@
+# @package _global_
+
+scheduler:
+  _target_: timm.scheduler.cosine_lr.CosineLRScheduler

@@ -1,0 +1,4 @@
+# @package _global_
+
+data_module:
+  _target_: data_module.datamodule.PCAMDataModule
