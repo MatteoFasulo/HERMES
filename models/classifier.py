@@ -13,7 +13,7 @@ class ResNet18Classifier(LightningModule):
     def __init__(self, num_classes: int, cfg: DictConfig = None):
         super().__init__()
         self.cfg = cfg
-        self.model = models.resnet18(pretrained=True)
+        self.model = models.resnet18(weights='DEFAULT')
         self.model.fc = nn.Linear(self.model.fc.in_features, num_classes)
         self.num_classes = num_classes
         

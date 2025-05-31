@@ -4,6 +4,8 @@ tag: default
 num_nodes: 1
 devices: 1
 seed: 42
+batch_size: 256
+num_workers: 8
 
 training: true
 final_eval: false
@@ -27,9 +29,8 @@ adversarial:
 data_module:
   data_root: "data/"
   cfg:
-    batch_size: 64
-    num_workers: 4
-    pin_memory: true
+    batch_size: ${batch_size}
+    num_workers: ${num_workers}
 
 criterion:
   label_smoothing: 0.1
@@ -43,7 +44,7 @@ scheduler:
   seed: ${seed}
 
 optimizer:
-  lr: 1e-3
+  lr: 5e-4
   weight_decay: 0.05
 
 callbacks:
