@@ -3,7 +3,7 @@ from torchvision import transforms
 from torchvision.datasets import PCAM
 from torch.utils.data import DataLoader
 
-from utils.utils import train_transform, val_transform
+from src.utils.utils import train_transform, val_transform
 
 class PCAMDataModule(LightningDataModule):
     def __init__(self, data_root: str, cfg=None, name=""):

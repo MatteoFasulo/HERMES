@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from typing import Dict, Any
-from attacks.attacks import FGSM
+from src.attacks.attacks import FGSM
 
 
 class AdversarialTraining:

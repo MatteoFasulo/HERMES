@@ -2,28 +2,58 @@
 #    uv pip compile pyproject.toml -o requirements.txt
 absl-py==2.3.0
     # via tensorboard
+adversarial-robustness-toolbox==1.19.1
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 aiohappyeyeballs==2.6.1
     # via aiohttp
 aiohttp==3.12.6
     # via fsspec
 aiosignal==1.3.2
     # via aiohttp
+annotated-types==0.7.0
+    # via pydantic
 antlr4-python3-runtime==4.9.3
     # via
     #   hydra-core
     #   omegaconf
+anyio==4.9.0
+    # via starlette
+asttokens==3.0.0
+    # via stack-data
 async-timeout==5.0.1
     # via aiohttp
 attrs==25.3.0
     # via aiohttp
+backoff==2.2.1
+    # via lightning-sdk
 beautifulsoup4==4.13.4
     # via gdown
 certifi==2025.4.26
     # via requests
 charset-normalizer==3.4.2
     # via requests
+click==8.2.1
+    # via
+    #   lightning-sdk
+    #   uvicorn
+comm==0.2.2
+    # via ipykernel
+debugpy==1.8.14
+    # via ipykernel
+decorator==5.2.1
+    # via ipython
+docker==7.1.0
+    # via lightning-sdk
 docstring-parser==0.16
     # via jsonargparse
+exceptiongroup==1.3.0
+    # via
+    #   anyio
+    #   ipython
+executing==2.2.0
+    # via stack-data
+fastapi==0.115.12
+    # via lightning-sdk
 filelock==3.18.0
     # via
     #   gdown
@@ -41,46 +71,77 @@ gdown==5.2.0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 grpcio==1.71.0
     # via tensorboard
+h11==0.16.0
+    # via uvicorn
 h5py==3.13.0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 hydra-core==1.3.2
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 idna==3.10
     # via
+    #   anyio
     #   requests
     #   yarl
 importlib-resources==6.5.2
     # via typeshed-client
+ipykernel==6.29.5
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
+ipython==8.37.0
+    # via ipykernel
+jedi==0.19.2
+    # via ipython
 jinja2==3.1.6
     # via torch
 joblib==1.5.1
     # via scikit-learn
 jsonargparse==4.40.0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
+jupyter-client==8.6.3
+    # via ipykernel
+jupyter-core==5.8.1
+    # via
+    #   ipykernel
+    #   jupyter-client
 lightning==2.5.1.post0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
+lightning-sdk==0.2.18
+    # via litmodels
 lightning-utilities==0.14.3
     # via
     #   lightning
+    #   litmodels
     #   pytorch-lightning
     #   torchmetrics
+litmodels==0.1.8
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 markdown==3.8
     # via tensorboard
+markdown-it-py==3.0.0
+    # via rich
 markupsafe==3.0.2
     # via
     #   jinja2
     #   werkzeug
+matplotlib-inline==0.1.7
+    # via
+    #   ipykernel
+    #   ipython
+mdurl==0.1.2
+    # via markdown-it-py
 mpmath==1.3.0
     # via sympy
 multidict==6.4.4
     # via
     #   aiohttp
     #   yarl
+nest-asyncio==1.6.0
+    # via ipykernel
 networkx==3.4.2
     # via torch
 numpy==2.2.6
     # via
     #   fasulobabboniomelchenko2425 (pyproject.toml)
+    #   adversarial-robustness-toolbox
     #   h5py
     #   pandas
     #   scikit-learn
@@ -133,7 +194,9 @@ omegaconf==2.3.0
 packaging==24.2
     # via
     #   hydra-core
+    #   ipykernel
     #   lightning
+    #   lightning-sdk
     #   lightning-utilities
     #   pytorch-lightning
     #   tensorboard
@@ -143,8 +206,16 @@ pandas==2.2.3
     # via
     #   fasulobabboniomelchenko2425 (pyproject.toml)
     #   torch-tb-profiler
+parso==0.8.4
+    # via jedi
+pexpect==4.9.0
+    # via ipython
 pillow==11.2.1
     # via torchvision
+platformdirs==4.3.8
+    # via jupyter-core
+prompt-toolkit==3.0.51
+    # via ipython
 propcache==0.3.1
     # via
     #   aiohttp
@@ -153,10 +224,28 @@ protobuf==6.31.1
     # via
     #   tensorboard
     #   tensorboardx
+psutil==7.0.0
+    # via ipykernel
+ptyprocess==0.7.0
+    # via pexpect
+pure-eval==0.2.3
+    # via stack-data
+pydantic==2.11.5
+    # via fastapi
+pydantic-core==2.33.2
+    # via pydantic
+pygments==2.19.1
+    # via
+    #   ipython
+    #   rich
+pyjwt==2.10.1
+    # via lightning-sdk
 pysocks==1.7.1
     # via requests
 python-dateutil==2.9.0.post0
-    # via pandas
+    # via
+    #   jupyter-client
+    #   pandas
 pytorch-lightning==2.5.1.post0
     # via lightning
 pytz==2025.2
@@ -167,23 +256,47 @@ pyyaml==6.0.2
     #   lightning
     #   omegaconf
     #   pytorch-lightning
+pyzmq==26.4.0
+    # via
+    #   ipykernel
+    #   jupyter-client
 requests==2.32.3
-    # via gdown
+    # via
+    #   docker
+    #   gdown
+    #   lightning-sdk
+rich==14.0.0
+    # via lightning-sdk
 scikit-learn==1.6.1
-    # via fasulobabboniomelchenko2425 (pyproject.toml)
+    # via
+    #   fasulobabboniomelchenko2425 (pyproject.toml)
+    #   adversarial-robustness-toolbox
 scipy==1.15.3
-    # via scikit-learn
+    # via
+    #   adversarial-robustness-toolbox
+    #   scikit-learn
 setuptools==80.9.0
     # via
+    #   adversarial-robustness-toolbox
     #   lightning-utilities
     #   tensorboard
     #   triton
+simple-term-menu==1.6.6
+    # via lightning-sdk
 six==1.17.0
     # via
+    #   adversarial-robustness-toolbox
+    #   lightning-sdk
     #   python-dateutil
     #   tensorboard
+sniffio==1.3.1
+    # via anyio
 soupsieve==2.7
     # via beautifulsoup4
+stack-data==0.6.3
+    # via ipython
+starlette==0.46.2
+    # via fastapi
 sympy==1.14.0
     # via torch
 tensorboard==2.19.0
@@ -210,30 +323,66 @@ torchmetrics==1.7.2
     #   pytorch-lightning
 torchvision==0.22.0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
+tornado==6.5.1
+    # via
+    #   ipykernel
+    #   jupyter-client
 tqdm==4.67.1
     # via
     #   fasulobabboniomelchenko2425 (pyproject.toml)
+    #   adversarial-robustness-toolbox
     #   gdown
     #   lightning
+    #   lightning-sdk
     #   pytorch-lightning
+traitlets==5.14.3
+    # via
+    #   comm
+    #   ipykernel
+    #   ipython
+    #   jupyter-client
+    #   jupyter-core
+    #   matplotlib-inline
 triton==3.3.0
     # via torch
 typeshed-client==2.7.0
     # via jsonargparse
 typing-extensions==4.13.2
     # via
+    #   anyio
     #   beautifulsoup4
+    #   exceptiongroup
+    #   fastapi
+    #   ipython
     #   lightning
     #   lightning-utilities
     #   multidict
+    #   pydantic
+    #   pydantic-core
     #   pytorch-lightning
+    #   rich
     #   torch
     #   typeshed-client
+    #   typing-inspection
+    #   uvicorn
+typing-inspection==0.4.1
+    # via pydantic
 tzdata==2025.2
     # via pandas
 urllib3==2.4.0
-    # via requests
+    # via
+    #   docker
+    #   lightning-sdk
+    #   requests
+uvicorn==0.34.3
+    # via lightning-sdk
+wcwidth==0.2.13
+    # via prompt-toolkit
+websocket-client==1.8.0
+    # via lightning-sdk
 werkzeug==3.1.3
     # via tensorboard
+wget==3.2
+    # via lightning-sdk
 yarl==1.20.0
     # via aiohttp

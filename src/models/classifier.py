@@ -6,8 +6,8 @@ import torchvision.models as models
 import torch.optim as optim
 import hydra
 from omegaconf import DictConfig
-from attacks.attacks import FGSM
-from defenses.defenses import AdversarialTraining
+from src.attacks.attacks import FGSM
+from src.defenses.defenses import AdversarialTraining
 
 class ResNet18Classifier(LightningModule):
     def __init__(self, num_classes: int, cfg: DictConfig = None):
