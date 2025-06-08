@@ -1,3 +1,0 @@
-# @package _global_
-criterion:
-  _target_: src.criterion.ce_criterion.CrossEntropyWrapper
