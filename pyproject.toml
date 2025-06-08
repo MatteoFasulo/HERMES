@@ -1,7 +1,7 @@
 [project]
 name = "fasulobabboniomelchenko2425"
 version = "0.1.0"
-description = "Pproject focused on ensuring healthcare ethics and robustness in medical image systems. It is part of the Ethics in AI course at the University of Bologna, and it aims to provide a framework for training and evaluating medical image models with a focus on ethical considerations and robustness."
+description = "Project focused on ensuring healthcare ethics and robustness in medical image systems. It is part of the Ethics in AI course at the University of Bologna, and it aims to provide a framework for training and evaluating medical image models with a focus on ethical considerations and robustness."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
