@@ -1,7 +1,7 @@
 [project]
 name = "fasulobabboniomelchenko2425"
 version = "0.1.0"
-description = "Add your description here"
+description = "Pproject focused on ensuring healthcare ethics and robustness in medical image systems. It is part of the Ethics in AI course at the University of Bologna, and it aims to provide a framework for training and evaluating medical image models with a focus on ethical considerations and robustness."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -25,6 +25,11 @@ dependencies = [
     "torch-tb-profiler>=0.4.3",
     "torchvision>=0.22.0",
     "tqdm>=4.67.1",
-    "tsnecuda==3.0.1+cu122",
+    "tsnecuda>=3.0.0",
     "umap-learn>=0.5.7",
 ]
+
+[[tool.uv.index]]
+name = "tsnecuda"
+url = "https://tsnecuda.isx.ai/tsnecuda_stable.html"
+explicit = true

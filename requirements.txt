@@ -36,8 +36,15 @@ click==8.2.1
     # via
     #   lightning-sdk
     #   uvicorn
+colorama==0.4.6
+    # via
+    #   click
+    #   ipython
+    #   tqdm
 comm==0.2.2
-    # via ipykernel
+    # via
+    #   ipykernel
+    #   ipywidgets
 debugpy==1.8.14
     # via ipykernel
 decorator==5.2.1
@@ -57,6 +64,7 @@ fastapi==0.115.12
 filelock==3.18.0
     # via
     #   gdown
+    #   huggingface-hub
     #   torch
 frozenlist==1.6.0
     # via
@@ -64,6 +72,7 @@ frozenlist==1.6.0
     #   aiosignal
 fsspec==2025.5.1
     # via
+    #   huggingface-hub
     #   lightning
     #   pytorch-lightning
     #   torch
@@ -75,6 +84,8 @@ h11==0.16.0
     # via uvicorn
 h5py==3.13.0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
+huggingface-hub==0.32.4
+    # via timm
 hydra-core==1.3.2
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 idna==3.10
@@ -84,16 +95,24 @@ idna==3.10
     #   yarl
 importlib-resources==6.5.2
     # via typeshed-client
+iprogress==0.4
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 ipykernel==6.29.5
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 ipython==8.37.0
-    # via ipykernel
+    # via
+    #   ipykernel
+    #   ipywidgets
+ipywidgets==8.1.7
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 jedi==0.19.2
     # via ipython
 jinja2==3.1.6
     # via torch
 joblib==1.5.1
-    # via scikit-learn
+    # via
+    #   pynndescent
+    #   scikit-learn
 jsonargparse==4.40.0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 jupyter-client==8.6.3
@@ -102,6 +121,8 @@ jupyter-core==5.8.1
     # via
     #   ipykernel
     #   jupyter-client
+jupyterlab-widgets==3.0.15
+    # via ipywidgets
 lightning==2.5.1.post0
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 lightning-sdk==0.2.18
@@ -114,6 +135,10 @@ lightning-utilities==0.14.3
     #   torchmetrics
 litmodels==0.1.8
     # via fasulobabboniomelchenko2425 (pyproject.toml)
+llvmlite==0.44.0
+    # via
+    #   numba
+    #   pynndescent
 markdown==3.8
     # via tensorboard
 markdown-it-py==3.0.0
@@ -138,11 +163,16 @@ nest-asyncio==1.6.0
     # via ipykernel
 networkx==3.4.2
     # via torch
+numba==0.61.2
+    # via
+    #   pynndescent
+    #   umap-learn
 numpy==2.2.6
     # via
     #   fasulobabboniomelchenko2425 (pyproject.toml)
     #   adversarial-robustness-toolbox
     #   h5py
+    #   numba
     #   pandas
     #   scikit-learn
     #   scipy
@@ -150,49 +180,15 @@ numpy==2.2.6
     #   tensorboardx
     #   torchmetrics
     #   torchvision
-nvidia-cublas-cu12==12.6.4.1
-    # via
-    #   nvidia-cudnn-cu12
-    #   nvidia-cusolver-cu12
-    #   torch
-nvidia-cuda-cupti-cu12==12.6.80
-    # via torch
-nvidia-cuda-nvrtc-cu12==12.6.77
-    # via torch
-nvidia-cuda-runtime-cu12==12.6.77
-    # via torch
-nvidia-cudnn-cu12==9.5.1.17
-    # via torch
-nvidia-cufft-cu12==11.3.0.4
-    # via torch
-nvidia-cufile-cu12==1.11.1.6
-    # via torch
-nvidia-curand-cu12==10.3.7.77
-    # via torch
-nvidia-cusolver-cu12==11.7.1.2
-    # via torch
-nvidia-cusparse-cu12==12.5.4.2
-    # via
-    #   nvidia-cusolver-cu12
-    #   torch
-nvidia-cusparselt-cu12==0.6.3
-    # via torch
-nvidia-nccl-cu12==2.26.2
-    # via torch
-nvidia-nvjitlink-cu12==12.6.85
-    # via
-    #   nvidia-cufft-cu12
-    #   nvidia-cusolver-cu12
-    #   nvidia-cusparse-cu12
-    #   torch
-nvidia-nvtx-cu12==12.6.77
-    # via torch
+    #   tsnecuda
+    #   umap-learn
 omegaconf==2.3.0
     # via
     #   fasulobabboniomelchenko2425 (pyproject.toml)
     #   hydra-core
 packaging==24.2
     # via
+    #   huggingface-hub
     #   hydra-core
     #   ipykernel
     #   lightning
@@ -208,8 +204,6 @@ pandas==2.2.3
     #   torch-tb-profiler
 parso==0.8.4
     # via jedi
-pexpect==4.9.0
-    # via ipython
 pillow==11.2.1
     # via torchvision
 platformdirs==4.3.8
@@ -226,8 +220,6 @@ protobuf==6.31.1
     #   tensorboardx
 psutil==7.0.0
     # via ipykernel
-ptyprocess==0.7.0
-    # via pexpect
 pure-eval==0.2.3
     # via stack-data
 pydantic==2.11.5
@@ -240,6 +232,8 @@ pygments==2.19.1
     #   rich
 pyjwt==2.10.1
     # via lightning-sdk
+pynndescent==0.5.13
+    # via umap-learn
 pysocks==1.7.1
     # via requests
 python-dateutil==2.9.0.post0
@@ -250,12 +244,18 @@ pytorch-lightning==2.5.1.post0
     # via lightning
 pytz==2025.2
     # via pandas
+pywin32==310
+    # via
+    #   docker
+    #   jupyter-core
 pyyaml==6.0.2
     # via
+    #   huggingface-hub
     #   jsonargparse
     #   lightning
     #   omegaconf
     #   pytorch-lightning
+    #   timm
 pyzmq==26.4.0
     # via
     #   ipykernel
@@ -264,28 +264,35 @@ requests==2.32.3
     # via
     #   docker
     #   gdown
+    #   huggingface-hub
     #   lightning-sdk
 rich==14.0.0
     # via lightning-sdk
+safetensors==0.5.3
+    # via timm
 scikit-learn==1.6.1
     # via
     #   fasulobabboniomelchenko2425 (pyproject.toml)
     #   adversarial-robustness-toolbox
+    #   pynndescent
+    #   umap-learn
 scipy==1.15.3
     # via
     #   adversarial-robustness-toolbox
+    #   pynndescent
     #   scikit-learn
+    #   umap-learn
 setuptools==80.9.0
     # via
     #   adversarial-robustness-toolbox
     #   lightning-utilities
     #   tensorboard
-    #   triton
 simple-term-menu==1.6.6
     # via lightning-sdk
 six==1.17.0
     # via
     #   adversarial-robustness-toolbox
+    #   iprogress
     #   lightning-sdk
     #   python-dateutil
     #   tensorboard
@@ -309,10 +316,13 @@ tensorboardx==2.6.2.2
     # via fasulobabboniomelchenko2425 (pyproject.toml)
 threadpoolctl==3.6.0
     # via scikit-learn
+timm==1.0.15
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 torch==2.7.0
     # via
     #   lightning
     #   pytorch-lightning
+    #   timm
     #   torchmetrics
     #   torchvision
 torch-tb-profiler==0.4.3
@@ -322,7 +332,9 @@ torchmetrics==1.7.2
     #   lightning
     #   pytorch-lightning
 torchvision==0.22.0
-    # via fasulobabboniomelchenko2425 (pyproject.toml)
+    # via
+    #   fasulobabboniomelchenko2425 (pyproject.toml)
+    #   timm
 tornado==6.5.1
     # via
     #   ipykernel
@@ -332,19 +344,22 @@ tqdm==4.67.1
     #   fasulobabboniomelchenko2425 (pyproject.toml)
     #   adversarial-robustness-toolbox
     #   gdown
+    #   huggingface-hub
     #   lightning
     #   lightning-sdk
     #   pytorch-lightning
+    #   umap-learn
 traitlets==5.14.3
     # via
     #   comm
     #   ipykernel
     #   ipython
+    #   ipywidgets
     #   jupyter-client
     #   jupyter-core
     #   matplotlib-inline
-triton==3.3.0
-    # via torch
+tsnecuda==3.0.1
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 typeshed-client==2.7.0
     # via jsonargparse
 typing-extensions==4.13.2
@@ -353,6 +368,7 @@ typing-extensions==4.13.2
     #   beautifulsoup4
     #   exceptiongroup
     #   fastapi
+    #   huggingface-hub
     #   ipython
     #   lightning
     #   lightning-utilities
@@ -369,6 +385,8 @@ typing-inspection==0.4.1
     # via pydantic
 tzdata==2025.2
     # via pandas
+umap-learn==0.5.7
+    # via fasulobabboniomelchenko2425 (pyproject.toml)
 urllib3==2.4.0
     # via
     #   docker
@@ -384,5 +402,7 @@ werkzeug==3.1.3
     # via tensorboard
 wget==3.2
     # via lightning-sdk
+widgetsnbextension==4.0.14
+    # via ipywidgets
 yarl==1.20.0
     # via aiohttp
