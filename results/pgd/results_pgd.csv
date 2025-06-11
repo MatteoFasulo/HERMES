@@ -1,0 +1,133 @@
+attack,defense,metric
+none,none,0.9271
+PGD (eps=0.01),none,0.1401
+PGD (eps=0.01),GaussianSmoothing (sigma=0.2),0.6474
+PGD (eps=0.01),GaussianSmoothing (sigma=0.5),0.6728
+PGD (eps=0.01),GaussianSmoothing (sigma=1.0),0.6221
+PGD (eps=0.01),JpegCompression (q=10),0.7097
+PGD (eps=0.01),JpegCompression (q=50),0.7959
+PGD (eps=0.01),JpegCompression (q=95),0.5305
+PGD (eps=0.01),SpatialSmoothing (w=3),0.5356
+PGD (eps=0.01),SpatialSmoothing (w=5),0.5176
+PGD (eps=0.01),SpatialSmoothing (w=7),0.5432
+PGD (eps=0.01),Total Variance Minimization (p=0.3),0.4100
+PGD (eps=0.01),Total Variance Minimization (p=0.5),0.4098
+PGD (eps=0.02),none,0.2206
+PGD (eps=0.02),GaussianSmoothing (sigma=0.2),0.5897
+PGD (eps=0.02),GaussianSmoothing (sigma=0.5),0.6729
+PGD (eps=0.02),GaussianSmoothing (sigma=1.0),0.6259
+PGD (eps=0.02),JpegCompression (q=10),0.7127
+PGD (eps=0.02),JpegCompression (q=50),0.7555
+PGD (eps=0.02),JpegCompression (q=95),0.4804
+PGD (eps=0.02),SpatialSmoothing (w=3),0.5378
+PGD (eps=0.02),SpatialSmoothing (w=5),0.4910
+PGD (eps=0.02),SpatialSmoothing (w=7),0.5179
+PGD (eps=0.02),Total Variance Minimization (p=0.3),0.4104
+PGD (eps=0.02),Total Variance Minimization (p=0.5),0.4103
+PGD (eps=0.03),none,0.2619
+PGD (eps=0.03),GaussianSmoothing (sigma=0.2),0.5707
+PGD (eps=0.03),GaussianSmoothing (sigma=0.5),0.6595
+PGD (eps=0.03),GaussianSmoothing (sigma=1.0),0.6142
+PGD (eps=0.03),JpegCompression (q=10),0.6986
+PGD (eps=0.03),JpegCompression (q=50),0.7286
+PGD (eps=0.03),JpegCompression (q=95),0.4607
+PGD (eps=0.03),SpatialSmoothing (w=3),0.5560
+PGD (eps=0.03),SpatialSmoothing (w=5),0.5059
+PGD (eps=0.03),SpatialSmoothing (w=7),0.5337
+PGD (eps=0.03),Total Variance Minimization (p=0.3),0.4406
+PGD (eps=0.03),Total Variance Minimization (p=0.5),0.4401
+PGD (eps=0.04),none,0.2689
+PGD (eps=0.04),GaussianSmoothing (sigma=0.2),0.5355
+PGD (eps=0.04),GaussianSmoothing (sigma=0.5),0.6677
+PGD (eps=0.04),GaussianSmoothing (sigma=1.0),0.5873
+PGD (eps=0.04),JpegCompression (q=10),0.7040
+PGD (eps=0.04),JpegCompression (q=50),0.6964
+PGD (eps=0.04),JpegCompression (q=95),0.4316
+PGD (eps=0.04),SpatialSmoothing (w=3),0.5444
+PGD (eps=0.04),SpatialSmoothing (w=5),0.5126
+PGD (eps=0.04),SpatialSmoothing (w=7),0.5461
+PGD (eps=0.04),Total Variance Minimization (p=0.3),0.4703
+PGD (eps=0.04),Total Variance Minimization (p=0.5),0.4696
+PGD (eps=0.05),none,0.2738
+PGD (eps=0.05),GaussianSmoothing (sigma=0.2),0.5068
+PGD (eps=0.05),GaussianSmoothing (sigma=0.5),0.6617
+PGD (eps=0.05),GaussianSmoothing (sigma=1.0),0.6110
+PGD (eps=0.05),JpegCompression (q=10),0.6986
+PGD (eps=0.05),JpegCompression (q=50),0.6798
+PGD (eps=0.05),JpegCompression (q=95),0.4029
+PGD (eps=0.05),SpatialSmoothing (w=3),0.5123
+PGD (eps=0.05),SpatialSmoothing (w=5),0.5187
+PGD (eps=0.05),SpatialSmoothing (w=7),0.5588
+PGD (eps=0.05),Total Variance Minimization (p=0.3),0.4550
+PGD (eps=0.05),Total Variance Minimization (p=0.5),0.4538
+PGD (eps=0.06),none,0.0587
+PGD (eps=0.06),GaussianSmoothing (sigma=0.2),0.4272
+PGD (eps=0.06),GaussianSmoothing (sigma=0.5),0.6494
+PGD (eps=0.06),GaussianSmoothing (sigma=1.0),0.6189
+PGD (eps=0.06),JpegCompression (q=10),0.6981
+PGD (eps=0.06),JpegCompression (q=50),0.5981
+PGD (eps=0.06),JpegCompression (q=95),0.1537
+PGD (eps=0.06),SpatialSmoothing (w=3),0.3550
+PGD (eps=0.06),SpatialSmoothing (w=5),0.4216
+PGD (eps=0.06),SpatialSmoothing (w=7),0.4920
+PGD (eps=0.06),Total Variance Minimization (p=0.3),0.2692
+PGD (eps=0.06),Total Variance Minimization (p=0.5),0.2657
+PGD (eps=0.07),none,0.0079
+PGD (eps=0.07),GaussianSmoothing (sigma=0.2),0.3420
+PGD (eps=0.07),GaussianSmoothing (sigma=0.5),0.6323
+PGD (eps=0.07),GaussianSmoothing (sigma=1.0),0.6050
+PGD (eps=0.07),JpegCompression (q=10),0.6943
+PGD (eps=0.07),JpegCompression (q=50),0.5073
+PGD (eps=0.07),JpegCompression (q=95),0.0328
+PGD (eps=0.07),SpatialSmoothing (w=3),0.1865
+PGD (eps=0.07),SpatialSmoothing (w=5),0.3220
+PGD (eps=0.07),SpatialSmoothing (w=7),0.4262
+PGD (eps=0.07),Total Variance Minimization (p=0.3),0.1215
+PGD (eps=0.07),Total Variance Minimization (p=0.5),0.1176
+PGD (eps=0.08),none,0.0008
+PGD (eps=0.08),GaussianSmoothing (sigma=0.2),0.2290
+PGD (eps=0.08),GaussianSmoothing (sigma=0.5),0.6043
+PGD (eps=0.08),GaussianSmoothing (sigma=1.0),0.5808
+PGD (eps=0.08),JpegCompression (q=10),0.6982
+PGD (eps=0.08),JpegCompression (q=50),0.4177
+PGD (eps=0.08),JpegCompression (q=95),0.0048
+PGD (eps=0.08),SpatialSmoothing (w=3),0.0768
+PGD (eps=0.08),SpatialSmoothing (w=5),0.2456
+PGD (eps=0.08),SpatialSmoothing (w=7),0.3613
+PGD (eps=0.08),Total Variance Minimization (p=0.3),0.0406
+PGD (eps=0.08),Total Variance Minimization (p=0.5),0.0380
+PGD (eps=0.09),none,0.0000
+PGD (eps=0.09),GaussianSmoothing (sigma=0.2),0.1458
+PGD (eps=0.09),GaussianSmoothing (sigma=0.5),0.5474
+PGD (eps=0.09),GaussianSmoothing (sigma=1.0),0.5567
+PGD (eps=0.09),JpegCompression (q=10),0.6788
+PGD (eps=0.09),JpegCompression (q=50),0.3187
+PGD (eps=0.09),JpegCompression (q=95),0.0005
+PGD (eps=0.09),SpatialSmoothing (w=3),0.0276
+PGD (eps=0.09),SpatialSmoothing (w=5),0.1560
+PGD (eps=0.09),SpatialSmoothing (w=7),0.2785
+PGD (eps=0.09),Total Variance Minimization (p=0.3),0.0132
+PGD (eps=0.09),Total Variance Minimization (p=0.5),0.0121
+PGD (eps=0.10),none,0.0000
+PGD (eps=0.10),GaussianSmoothing (sigma=0.2),0.0754
+PGD (eps=0.10),GaussianSmoothing (sigma=0.5),0.4600
+PGD (eps=0.10),GaussianSmoothing (sigma=1.0),0.5235
+PGD (eps=0.10),JpegCompression (q=10),0.6461
+PGD (eps=0.10),JpegCompression (q=50),0.2266
+PGD (eps=0.10),JpegCompression (q=95),0.0000
+PGD (eps=0.10),SpatialSmoothing (w=3),0.0079
+PGD (eps=0.10),SpatialSmoothing (w=5),0.0928
+PGD (eps=0.10),SpatialSmoothing (w=7),0.2023
+PGD (eps=0.10),Total Variance Minimization (p=0.3),0.0028
+PGD (eps=0.10),Total Variance Minimization (p=0.5),0.0023
+none,GaussianSmoothing (sigma=0.2),0.6908
+none,GaussianSmoothing (sigma=0.5),0.6797
+none,GaussianSmoothing (sigma=1.0),0.6330
+none,JpegCompression (q=10),0.7282
+none,JpegCompression (q=50),0.8565
+none,JpegCompression (q=95),0.9124
+none,SpatialSmoothing (w=3),0.8530
+none,SpatialSmoothing (w=5),0.6872
+none,SpatialSmoothing (w=7),0.6485
+none,Total Variance Minimization (p=0.3),0.7819
+none,Total Variance Minimization (p=0.5),0.7867
