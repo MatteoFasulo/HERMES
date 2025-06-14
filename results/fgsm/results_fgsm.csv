@@ -1,133 +1,166 @@
 attack,defense,metric
-none,none,0.9271
-FGSM (eps=0.01),none,0.1011
-FGSM (eps=0.01),GaussianSmoothing (sigma=0.2),0.6298
-FGSM (eps=0.01),GaussianSmoothing (sigma=0.5),0.6795
-FGSM (eps=0.01),GaussianSmoothing (sigma=1.0),0.6163
-FGSM (eps=0.01),JpegCompression (q=10),0.7141
-FGSM (eps=0.01),JpegCompression (q=50),0.7702
-FGSM (eps=0.01),JpegCompression (q=95),0.3419
-FGSM (eps=0.01),SpatialSmoothing (w=3),0.3504
-FGSM (eps=0.01),SpatialSmoothing (w=5),0.4383
-FGSM (eps=0.01),SpatialSmoothing (w=7),0.5008
-FGSM (eps=0.01),Total Variance Minimization (p=0.3),0.2832
-FGSM (eps=0.01),Total Variance Minimization (p=0.5),0.2804
-FGSM (eps=0.02),none,0.0459
-FGSM (eps=0.02),GaussianSmoothing (sigma=0.2),0.5749
-FGSM (eps=0.02),GaussianSmoothing (sigma=0.5),0.6671
-FGSM (eps=0.02),GaussianSmoothing (sigma=1.0),0.6013
-FGSM (eps=0.02),JpegCompression (q=10),0.7012
-FGSM (eps=0.02),JpegCompression (q=50),0.6478
-FGSM (eps=0.02),JpegCompression (q=95),0.1164
-FGSM (eps=0.02),SpatialSmoothing (w=3),0.1413
-FGSM (eps=0.02),SpatialSmoothing (w=5),0.2750
-FGSM (eps=0.02),SpatialSmoothing (w=7),0.3828
-FGSM (eps=0.02),Total Variance Minimization (p=0.3),0.0983
-FGSM (eps=0.02),Total Variance Minimization (p=0.5),0.0961
-FGSM (eps=0.03),none,0.0501
-FGSM (eps=0.03),GaussianSmoothing (sigma=0.2),0.5313
-FGSM (eps=0.03),GaussianSmoothing (sigma=0.5),0.6617
-FGSM (eps=0.03),GaussianSmoothing (sigma=1.0),0.6056
-FGSM (eps=0.03),JpegCompression (q=10),0.6859
-FGSM (eps=0.03),JpegCompression (q=50),0.5177
-FGSM (eps=0.03),JpegCompression (q=95),0.0734
-FGSM (eps=0.03),SpatialSmoothing (w=3),0.1036
-FGSM (eps=0.03),SpatialSmoothing (w=5),0.2114
-FGSM (eps=0.03),SpatialSmoothing (w=7),0.3260
-FGSM (eps=0.03),Total Variance Minimization (p=0.3),0.0627
-FGSM (eps=0.03),Total Variance Minimization (p=0.5),0.0616
-FGSM (eps=0.04),none,0.0703
-FGSM (eps=0.04),GaussianSmoothing (sigma=0.2),0.4842
-FGSM (eps=0.04),GaussianSmoothing (sigma=0.5),0.6582
-FGSM (eps=0.04),GaussianSmoothing (sigma=1.0),0.6184
-FGSM (eps=0.04),JpegCompression (q=10),0.6807
-FGSM (eps=0.04),JpegCompression (q=50),0.3988
-FGSM (eps=0.04),JpegCompression (q=95),0.0708
-FGSM (eps=0.04),SpatialSmoothing (w=3),0.1179
-FGSM (eps=0.04),SpatialSmoothing (w=5),0.2058
-FGSM (eps=0.04),SpatialSmoothing (w=7),0.3154
-FGSM (eps=0.04),Total Variance Minimization (p=0.3),0.0608
-FGSM (eps=0.04),Total Variance Minimization (p=0.5),0.0601
-FGSM (eps=0.05),none,0.1018
-FGSM (eps=0.05),GaussianSmoothing (sigma=0.2),0.4578
-FGSM (eps=0.05),GaussianSmoothing (sigma=0.5),0.6420
-FGSM (eps=0.05),GaussianSmoothing (sigma=1.0),0.5963
-FGSM (eps=0.05),JpegCompression (q=10),0.6667
-FGSM (eps=0.05),JpegCompression (q=50),0.3089
-FGSM (eps=0.05),JpegCompression (q=95),0.0806
-FGSM (eps=0.05),SpatialSmoothing (w=3),0.1537
-FGSM (eps=0.05),SpatialSmoothing (w=5),0.2325
-FGSM (eps=0.05),SpatialSmoothing (w=7),0.3268
-FGSM (eps=0.05),Total Variance Minimization (p=0.3),0.0713
-FGSM (eps=0.05),Total Variance Minimization (p=0.5),0.0708
-FGSM (eps=0.06),none,0.1405
-FGSM (eps=0.06),GaussianSmoothing (sigma=0.2),0.4516
-FGSM (eps=0.06),GaussianSmoothing (sigma=0.5),0.6272
-FGSM (eps=0.06),GaussianSmoothing (sigma=1.0),0.5856
-FGSM (eps=0.06),JpegCompression (q=10),0.6553
-FGSM (eps=0.06),JpegCompression (q=50),0.2633
-FGSM (eps=0.06),JpegCompression (q=95),0.0988
-FGSM (eps=0.06),SpatialSmoothing (w=3),0.2028
-FGSM (eps=0.06),SpatialSmoothing (w=5),0.2709
-FGSM (eps=0.06),SpatialSmoothing (w=7),0.3514
-FGSM (eps=0.06),Total Variance Minimization (p=0.3),0.0918
-FGSM (eps=0.06),Total Variance Minimization (p=0.5),0.0916
-FGSM (eps=0.07),none,0.1859
-FGSM (eps=0.07),GaussianSmoothing (sigma=0.2),0.4382
-FGSM (eps=0.07),GaussianSmoothing (sigma=0.5),0.6332
-FGSM (eps=0.07),GaussianSmoothing (sigma=1.0),0.5920
-FGSM (eps=0.07),JpegCompression (q=10),0.6460
-FGSM (eps=0.07),JpegCompression (q=50),0.2395
-FGSM (eps=0.07),JpegCompression (q=95),0.1220
-FGSM (eps=0.07),SpatialSmoothing (w=3),0.2553
-FGSM (eps=0.07),SpatialSmoothing (w=5),0.3136
-FGSM (eps=0.07),SpatialSmoothing (w=7),0.3839
-FGSM (eps=0.07),Total Variance Minimization (p=0.3),0.1191
-FGSM (eps=0.07),Total Variance Minimization (p=0.5),0.1189
-FGSM (eps=0.08),none,0.2333
-FGSM (eps=0.08),GaussianSmoothing (sigma=0.2),0.4391
-FGSM (eps=0.08),GaussianSmoothing (sigma=0.5),0.6228
-FGSM (eps=0.08),GaussianSmoothing (sigma=1.0),0.5710
-FGSM (eps=0.08),JpegCompression (q=10),0.6383
-FGSM (eps=0.08),JpegCompression (q=50),0.2339
-FGSM (eps=0.08),JpegCompression (q=95),0.1498
-FGSM (eps=0.08),SpatialSmoothing (w=3),0.3083
-FGSM (eps=0.08),SpatialSmoothing (w=5),0.3597
-FGSM (eps=0.08),SpatialSmoothing (w=7),0.4213
-FGSM (eps=0.08),Total Variance Minimization (p=0.3),0.1513
-FGSM (eps=0.08),Total Variance Minimization (p=0.5),0.1511
-FGSM (eps=0.09),none,0.2765
-FGSM (eps=0.09),GaussianSmoothing (sigma=0.2),0.4313
-FGSM (eps=0.09),GaussianSmoothing (sigma=0.5),0.5994
-FGSM (eps=0.09),GaussianSmoothing (sigma=1.0),0.5706
-FGSM (eps=0.09),JpegCompression (q=10),0.6302
-FGSM (eps=0.09),JpegCompression (q=50),0.2417
-FGSM (eps=0.09),JpegCompression (q=95),0.1858
-FGSM (eps=0.09),SpatialSmoothing (w=3),0.3578
-FGSM (eps=0.09),SpatialSmoothing (w=5),0.4050
-FGSM (eps=0.09),SpatialSmoothing (w=7),0.4613
-FGSM (eps=0.09),Total Variance Minimization (p=0.3),0.1892
-FGSM (eps=0.09),Total Variance Minimization (p=0.5),0.1890
-FGSM (eps=0.10),none,0.3116
-FGSM (eps=0.10),GaussianSmoothing (sigma=0.2),0.4359
-FGSM (eps=0.10),GaussianSmoothing (sigma=0.5),0.5980
-FGSM (eps=0.10),GaussianSmoothing (sigma=1.0),0.5705
-FGSM (eps=0.10),JpegCompression (q=10),0.6245
-FGSM (eps=0.10),JpegCompression (q=50),0.2570
-FGSM (eps=0.10),JpegCompression (q=95),0.2242
-FGSM (eps=0.10),SpatialSmoothing (w=3),0.3991
-FGSM (eps=0.10),SpatialSmoothing (w=5),0.4483
-FGSM (eps=0.10),SpatialSmoothing (w=7),0.5008
-FGSM (eps=0.10),Total Variance Minimization (p=0.3),0.2290
-FGSM (eps=0.10),Total Variance Minimization (p=0.5),0.2288
-none,GaussianSmoothing (sigma=0.2),0.6932
-none,GaussianSmoothing (sigma=0.5),0.6995
-none,GaussianSmoothing (sigma=1.0),0.6355
-none,JpegCompression (q=10),0.7282
-none,JpegCompression (q=50),0.8565
-none,JpegCompression (q=95),0.9124
-none,SpatialSmoothing (w=3),0.8530
-none,SpatialSmoothing (w=5),0.6872
-none,SpatialSmoothing (w=7),0.6485
-none,Total Variance Minimization (p=0.3),0.7820
-none,Total Variance Minimization (p=0.5),0.7868
+none,none,0.9249
+FGSM (eps=0.01),none,0.0837
+FGSM (eps=0.01),"GaussianSmoothing (k=3, sigma=0.2)",0.0837
+FGSM (eps=0.01),"GaussianSmoothing (k=3, sigma=0.4)",0.0901
+FGSM (eps=0.01),"GaussianSmoothing (k=3, sigma=0.6)",0.1708
+FGSM (eps=0.01),"GaussianSmoothing (k=3, sigma=0.8)",0.2531
+FGSM (eps=0.01),"GaussianSmoothing (k=5, sigma=0.2)",0.0837
+FGSM (eps=0.01),"GaussianSmoothing (k=5, sigma=0.4)",0.0901
+FGSM (eps=0.01),"GaussianSmoothing (k=5, sigma=0.6)",0.1733
+FGSM (eps=0.01),"GaussianSmoothing (k=5, sigma=0.8)",0.2768
+FGSM (eps=0.01),JpegCompression (q=50),0.4767
+FGSM (eps=0.01),JpegCompression (q=70),0.3814
+FGSM (eps=0.01),JpegCompression (q=90),0.2311
+FGSM (eps=0.01),SpatialSmoothing (w=3),0.3254
+FGSM (eps=0.01),SpatialSmoothing (w=5),0.4236
+FGSM (eps=0.01),Total Variance Minimization (p=0.3),0.4343
+FGSM (eps=0.02),none,0.0355
+FGSM (eps=0.02),"GaussianSmoothing (k=3, sigma=0.2)",0.0355
+FGSM (eps=0.02),"GaussianSmoothing (k=3, sigma=0.4)",0.0363
+FGSM (eps=0.02),"GaussianSmoothing (k=3, sigma=0.6)",0.0547
+FGSM (eps=0.02),"GaussianSmoothing (k=3, sigma=0.8)",0.0837
+FGSM (eps=0.02),"GaussianSmoothing (k=5, sigma=0.2)",0.0355
+FGSM (eps=0.02),"GaussianSmoothing (k=5, sigma=0.4)",0.0363
+FGSM (eps=0.02),"GaussianSmoothing (k=5, sigma=0.6)",0.0554
+FGSM (eps=0.02),"GaussianSmoothing (k=5, sigma=0.8)",0.0958
+FGSM (eps=0.02),JpegCompression (q=50),0.1352
+FGSM (eps=0.02),JpegCompression (q=70),0.0962
+FGSM (eps=0.02),JpegCompression (q=90),0.0535
+FGSM (eps=0.02),SpatialSmoothing (w=3),0.1192
+FGSM (eps=0.02),SpatialSmoothing (w=5),0.2581
+FGSM (eps=0.02),Total Variance Minimization (p=0.3),0.3580
+FGSM (eps=0.03),none,0.0388
+FGSM (eps=0.03),"GaussianSmoothing (k=3, sigma=0.2)",0.0388
+FGSM (eps=0.03),"GaussianSmoothing (k=3, sigma=0.4)",0.0377
+FGSM (eps=0.03),"GaussianSmoothing (k=3, sigma=0.6)",0.0451
+FGSM (eps=0.03),"GaussianSmoothing (k=3, sigma=0.8)",0.0616
+FGSM (eps=0.03),"GaussianSmoothing (k=5, sigma=0.2)",0.0388
+FGSM (eps=0.03),"GaussianSmoothing (k=5, sigma=0.4)",0.0377
+FGSM (eps=0.03),"GaussianSmoothing (k=5, sigma=0.6)",0.0454
+FGSM (eps=0.03),"GaussianSmoothing (k=5, sigma=0.8)",0.0686
+FGSM (eps=0.03),JpegCompression (q=50),0.0885
+FGSM (eps=0.03),JpegCompression (q=70),0.0644
+FGSM (eps=0.03),JpegCompression (q=90),0.0434
+FGSM (eps=0.03),SpatialSmoothing (w=3),0.0880
+FGSM (eps=0.03),SpatialSmoothing (w=5),0.1956
+FGSM (eps=0.03),Total Variance Minimization (p=0.3),0.3116
+FGSM (eps=0.04),none,0.0567
+FGSM (eps=0.04),"GaussianSmoothing (k=3, sigma=0.2)",0.0567
+FGSM (eps=0.04),"GaussianSmoothing (k=3, sigma=0.4)",0.0538
+FGSM (eps=0.04),"GaussianSmoothing (k=3, sigma=0.6)",0.0565
+FGSM (eps=0.04),"GaussianSmoothing (k=3, sigma=0.8)",0.0711
+FGSM (eps=0.04),"GaussianSmoothing (k=5, sigma=0.2)",0.0567
+FGSM (eps=0.04),"GaussianSmoothing (k=5, sigma=0.4)",0.0538
+FGSM (eps=0.04),"GaussianSmoothing (k=5, sigma=0.6)",0.0567
+FGSM (eps=0.04),"GaussianSmoothing (k=5, sigma=0.8)",0.0758
+FGSM (eps=0.04),JpegCompression (q=50),0.0748
+FGSM (eps=0.04),JpegCompression (q=70),0.0578
+FGSM (eps=0.04),JpegCompression (q=90),0.0494
+FGSM (eps=0.04),SpatialSmoothing (w=3),0.1041
+FGSM (eps=0.04),SpatialSmoothing (w=5),0.1928
+FGSM (eps=0.04),Total Variance Minimization (p=0.3),0.2893
+FGSM (eps=0.05),none,0.0852
+FGSM (eps=0.05),"GaussianSmoothing (k=3, sigma=0.2)",0.0852
+FGSM (eps=0.05),"GaussianSmoothing (k=3, sigma=0.4)",0.0804
+FGSM (eps=0.05),"GaussianSmoothing (k=3, sigma=0.6)",0.0813
+FGSM (eps=0.05),"GaussianSmoothing (k=3, sigma=0.8)",0.0970
+FGSM (eps=0.05),"GaussianSmoothing (k=5, sigma=0.2)",0.0852
+FGSM (eps=0.05),"GaussianSmoothing (k=5, sigma=0.4)",0.0804
+FGSM (eps=0.05),"GaussianSmoothing (k=5, sigma=0.6)",0.0813
+FGSM (eps=0.05),"GaussianSmoothing (k=5, sigma=0.8)",0.0999
+FGSM (eps=0.05),JpegCompression (q=50),0.0776
+FGSM (eps=0.05),JpegCompression (q=70),0.0625
+FGSM (eps=0.05),JpegCompression (q=90),0.0583
+FGSM (eps=0.05),SpatialSmoothing (w=3),0.1404
+FGSM (eps=0.05),SpatialSmoothing (w=5),0.2187
+FGSM (eps=0.05),Total Variance Minimization (p=0.3),0.2808
+FGSM (eps=0.06),none,0.1233
+FGSM (eps=0.06),"GaussianSmoothing (k=3, sigma=0.2)",0.1233
+FGSM (eps=0.06),"GaussianSmoothing (k=3, sigma=0.4)",0.1160
+FGSM (eps=0.06),"GaussianSmoothing (k=3, sigma=0.6)",0.1176
+FGSM (eps=0.06),"GaussianSmoothing (k=3, sigma=0.8)",0.1362
+FGSM (eps=0.06),"GaussianSmoothing (k=5, sigma=0.2)",0.1233
+FGSM (eps=0.06),"GaussianSmoothing (k=5, sigma=0.4)",0.1160
+FGSM (eps=0.06),"GaussianSmoothing (k=5, sigma=0.6)",0.1174
+FGSM (eps=0.06),"GaussianSmoothing (k=5, sigma=0.8)",0.1373
+FGSM (eps=0.06),JpegCompression (q=50),0.0884
+FGSM (eps=0.06),JpegCompression (q=70),0.0760
+FGSM (eps=0.06),JpegCompression (q=90),0.0778
+FGSM (eps=0.06),SpatialSmoothing (w=3),0.1888
+FGSM (eps=0.06),SpatialSmoothing (w=5),0.2592
+FGSM (eps=0.06),Total Variance Minimization (p=0.3),0.2828
+FGSM (eps=0.07),none,0.1681
+FGSM (eps=0.07),"GaussianSmoothing (k=3, sigma=0.2)",0.1681
+FGSM (eps=0.07),"GaussianSmoothing (k=3, sigma=0.4)",0.1584
+FGSM (eps=0.07),"GaussianSmoothing (k=3, sigma=0.6)",0.1613
+FGSM (eps=0.07),"GaussianSmoothing (k=3, sigma=0.8)",0.1850
+FGSM (eps=0.07),"GaussianSmoothing (k=5, sigma=0.2)",0.1681
+FGSM (eps=0.07),"GaussianSmoothing (k=5, sigma=0.4)",0.1584
+FGSM (eps=0.07),"GaussianSmoothing (k=5, sigma=0.6)",0.1609
+FGSM (eps=0.07),"GaussianSmoothing (k=5, sigma=0.8)",0.1846
+FGSM (eps=0.07),JpegCompression (q=50),0.0988
+FGSM (eps=0.07),JpegCompression (q=70),0.0876
+FGSM (eps=0.07),JpegCompression (q=90),0.0942
+FGSM (eps=0.07),SpatialSmoothing (w=3),0.2415
+FGSM (eps=0.07),SpatialSmoothing (w=5),0.3055
+FGSM (eps=0.07),Total Variance Minimization (p=0.3),0.2921
+FGSM (eps=0.08),none,0.2146
+FGSM (eps=0.08),"GaussianSmoothing (k=3, sigma=0.2)",0.2146
+FGSM (eps=0.08),"GaussianSmoothing (k=3, sigma=0.4)",0.2039
+FGSM (eps=0.08),"GaussianSmoothing (k=3, sigma=0.6)",0.2085
+FGSM (eps=0.08),"GaussianSmoothing (k=3, sigma=0.8)",0.2362
+FGSM (eps=0.08),"GaussianSmoothing (k=5, sigma=0.2)",0.2146
+FGSM (eps=0.08),"GaussianSmoothing (k=5, sigma=0.4)",0.2039
+FGSM (eps=0.08),"GaussianSmoothing (k=5, sigma=0.6)",0.2079
+FGSM (eps=0.08),"GaussianSmoothing (k=5, sigma=0.8)",0.2352
+FGSM (eps=0.08),JpegCompression (q=50),0.1171
+FGSM (eps=0.08),JpegCompression (q=70),0.1094
+FGSM (eps=0.08),JpegCompression (q=90),0.1228
+FGSM (eps=0.08),SpatialSmoothing (w=3),0.2938
+FGSM (eps=0.08),SpatialSmoothing (w=5),0.3534
+FGSM (eps=0.08),Total Variance Minimization (p=0.3),0.3049
+FGSM (eps=0.09),none,0.2568
+FGSM (eps=0.09),"GaussianSmoothing (k=3, sigma=0.2)",0.2568
+FGSM (eps=0.09),"GaussianSmoothing (k=3, sigma=0.4)",0.2475
+FGSM (eps=0.09),"GaussianSmoothing (k=3, sigma=0.6)",0.2552
+FGSM (eps=0.09),"GaussianSmoothing (k=3, sigma=0.8)",0.2837
+FGSM (eps=0.09),"GaussianSmoothing (k=5, sigma=0.2)",0.2568
+FGSM (eps=0.09),"GaussianSmoothing (k=5, sigma=0.4)",0.2475
+FGSM (eps=0.09),"GaussianSmoothing (k=5, sigma=0.6)",0.2546
+FGSM (eps=0.09),"GaussianSmoothing (k=5, sigma=0.8)",0.2827
+FGSM (eps=0.09),JpegCompression (q=50),0.1327
+FGSM (eps=0.09),JpegCompression (q=70),0.1273
+FGSM (eps=0.09),JpegCompression (q=90),0.1462
+FGSM (eps=0.09),SpatialSmoothing (w=3),0.3419
+FGSM (eps=0.09),SpatialSmoothing (w=5),0.3983
+FGSM (eps=0.09),Total Variance Minimization (p=0.3),0.3232
+FGSM (eps=0.1),none,0.2907
+FGSM (eps=0.1),"GaussianSmoothing (k=3, sigma=0.2)",0.2907
+FGSM (eps=0.1),"GaussianSmoothing (k=3, sigma=0.4)",0.2847
+FGSM (eps=0.1),"GaussianSmoothing (k=3, sigma=0.6)",0.2971
+FGSM (eps=0.1),"GaussianSmoothing (k=3, sigma=0.8)",0.3241
+FGSM (eps=0.1),"GaussianSmoothing (k=5, sigma=0.2)",0.2907
+FGSM (eps=0.1),"GaussianSmoothing (k=5, sigma=0.4)",0.2847
+FGSM (eps=0.1),"GaussianSmoothing (k=5, sigma=0.6)",0.2967
+FGSM (eps=0.1),"GaussianSmoothing (k=5, sigma=0.8)",0.3237
+FGSM (eps=0.1),JpegCompression (q=50),0.1575
+FGSM (eps=0.1),JpegCompression (q=70),0.1579
+FGSM (eps=0.1),JpegCompression (q=90),0.1823
+FGSM (eps=0.1),SpatialSmoothing (w=3),0.3811
+FGSM (eps=0.1),SpatialSmoothing (w=5),0.4388
+FGSM (eps=0.1),Total Variance Minimization (p=0.3),0.3422
+none,"GaussianSmoothing (k=3, sigma=0.2)",0.9249
+none,"GaussianSmoothing (k=3, sigma=0.4)",0.9252
+none,"GaussianSmoothing (k=3, sigma=0.6)",0.8971
+none,"GaussianSmoothing (k=3, sigma=0.8)",0.8599
+none,"GaussianSmoothing (k=5, sigma=0.2)",0.9249
+none,"GaussianSmoothing (k=5, sigma=0.4)",0.9252
+none,"GaussianSmoothing (k=5, sigma=0.6)",0.8953
+none,"GaussianSmoothing (k=5, sigma=0.8)",0.8382
+none,JpegCompression (q=50),0.8917
+none,JpegCompression (q=70),0.8857
+none,JpegCompression (q=90),0.9206
+none,SpatialSmoothing (w=3),0.8449
+none,SpatialSmoothing (w=5),0.6756
+none,Total Variance Minimization (p=0.3),0.5524
