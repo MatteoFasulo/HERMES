@@ -201,3 +201,5 @@ checkpoints/
 
 # Output folder
 outputs/
+notebooks/resnet_adversarial_training.ipynb
+.gitignore
